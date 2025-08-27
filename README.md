@@ -1,7 +1,11 @@
+<div align="center">
+   
 # 🌐 Network Traffic Analyzer
 
-<div align="center">
+</div>
 
+<div align="center">
+   
 [![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-Linux-green?style=for-the-badge&logo=linux&logoColor=white)](https://linux.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
@@ -18,7 +22,7 @@
 
 ---
 
-## 📋 Table of Contents
+## Table of Contents
 
 - [Overview](#-overview)
 - [Features](#-features)  
@@ -30,7 +34,7 @@
 
 ---
 
-## 🔍 Overview
+## Overview
 
 The **Network Traffic Analyzer** is an enterprise-grade network monitoring solution designed for cybersecurity professionals, network administrators, and developers. Built with Python's most robust networking libraries, it provides real-time packet analysis with zero packet loss and comprehensive protocol support.
 
@@ -44,30 +48,23 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 
 ---
 
-## ✨ Features
+## Features
 
 ### Core Capabilities
 
 | Feature | Description |
 |---------|-------------|
-| 🔬 **Deep Packet Inspection** | Complete layer 2-7 protocol analysis including IPv4/IPv6, TCP/UDP, HTTP/HTTPS, DNS, SSH, FTP |
-| 📊 **Real-Time Dashboard** | Interactive console interface with live packet streams, protocol distribution, and traffic metrics |
-| 🌍 **Geographic Intelligence** | Integrated MaxMind GeoIP2 with intelligent caching for IP geolocation |
-| ⚡ **High-Performance Engine** | Multi-threaded architecture with async I/O for handling high-volume traffic |
-| 🎯 **Advanced Filtering** | Berkeley Packet Filter (BPF) support with custom filter expressions |
-| 💾 **Smart Export System** | Automated PCAP generation and JSON analytics export |
-| 🔐 **Security Focused** | Privilege escalation handling and secure packet processing |
-
-### Performance Metrics
-
-- **Throughput**: Up to 10Gbps on modern hardware
-- **Latency**: <1ms packet processing delay
-- **Memory Usage**: Optimized LRU caching with configurable limits
-- **Concurrent Sessions**: Supports 1000+ simultaneous connections
+| **Deep Packet Inspection** | Complete layer 2-7 protocol analysis including IPv4/IPv6, TCP/UDP, HTTP/HTTPS, DNS, SSH, FTP |
+| **Real-Time Dashboard** | Interactive console interface with live packet streams, protocol distribution, and traffic metrics |
+| **Geographic Intelligence** | Integrated MaxMind GeoIP2 with intelligent caching for IP geolocation |
+| **High-Performance Engine** | Multi-threaded architecture with async I/O for handling high-volume traffic |
+| **Advanced Filtering** | Berkeley Packet Filter (BPF) support with custom filter expressions |
+| **Smart Export System** | Automated PCAP generation and JSON analytics export |
+| **Security Focused** | Privilege escalation handling and secure packet processing |
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ```
 ┌─────────────────────────────────────────────────┐
@@ -90,7 +87,7 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 
 ---
 
-## 🚀 Quick Start
+## Quick Start
 
 ### System Requirements
 
@@ -132,7 +129,7 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 
 ---
 
-## 📖 Usage Guide
+## Usage Guide
 
 ### Basic Operations
 
@@ -178,7 +175,7 @@ sudo network-analyzer-env/bin/python sniffer.py -i eth0 -f "tcp portrange 6881-6
 
 ---
 
-## 📊 Output & Analysis
+## Output & Analysis
 
 ### Generated Reports
 
@@ -234,7 +231,7 @@ tcpdump -nn -r output/network_capture.pcap | awk '{print $3}' | sort | uniq -c |
 
 ---
 
-## 📄 License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
@@ -249,7 +246,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 <div align="center">
 
-### 🌟 Star this repository if you find it useful!
+### Star this repository if you find it useful!
 
 **Developed with ❤️ by [Gidne Huda](https://github.com/jidne24)**
 
