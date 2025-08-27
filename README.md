@@ -9,8 +9,7 @@
 [![Python Version](https://img.shields.io/badge/Python-3.7%2B-blue?style=for-the-badge&logo=python&logoColor=white)](https://python.org)
 [![Platform](https://img.shields.io/badge/Platform-Linux-green?style=for-the-badge&logo=linux&logoColor=white)](https://linux.org)
 [![License](https://img.shields.io/badge/License-MIT-yellow?style=for-the-badge)](LICENSE)
-[![Build Status](https://img.shields.io/badge/Build-Passing-success?style=for-the-badge)](https://github.com/jidne24/CodeAlpha-Task)
-[![Security](https://img.shields.io/badge/Security-Verified-brightgreen?style=for-the-badge&logo=shield)](https://github.com/jidne24/CodeAlpha-Task)
+[![Security](https://img.shields.io/badge/Security-Verified-brightgreen?style=for-the-badge&logo=shield)](https://github.com/jidne24/network-traffic-analyzer)
 
 **A high-performance, real-time network packet analyzer with advanced visualization capabilities**
 
