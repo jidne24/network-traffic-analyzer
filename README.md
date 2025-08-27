@@ -10,8 +10,6 @@
 
 **A high-performance, real-time network packet analyzer with advanced visualization capabilities**
 
-[Features](#-features) • [Quick Start](#-quick-start) • [Documentation](#-usage) • [Contributing](#-contributing) • [Support](#-support)
-
 </div>
 
 <p align="center">
@@ -27,11 +25,7 @@
 - [Architecture](#-architecture)
 - [Quick Start](#-quick-start)
 - [Usage Guide](#-usage-guide)
-- [Configuration](#-configuration)
 - [Output & Analysis](#-output--analysis)
-- [Performance](#-performance)
-- [Contributing](#-contributing)
-- [Support](#-support)
 - [License](#-license)
 
 ---
@@ -146,9 +140,6 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 ```bash
 # Monitor default interface with full protocol analysis
 sudo network-analyzer-env/bin/python sniffer.py -i eth0
-
-# High-performance mode with custom buffer size
-sudo network-analyzer-env/bin/python sniffer.py -i wlan0 --buffer-size 65536
 ```
 
 ### Advanced Filtering
@@ -184,39 +175,6 @@ sudo network-analyzer-env/bin/python sniffer.py -i eth0 -f "tcp portrange 6881-6
 | `Ctrl + C` | Graceful shutdown with report generation |
 | `Ctrl + Z` | Pause capture (resume with `fg`) |
 | `q` | Quick exit (in dashboard mode) |
-
----
-
-## ⚙️ Configuration
-
-### Environment Variables
-
-```bash
-# Set custom output directory
-export NETWORK_ANALYZER_OUTPUT="/var/log/network-analyzer"
-
-# Configure GeoIP database path
-export GEOIP_DATABASE_PATH="/opt/geoip/GeoLite2-City.mmdb"
-
-# Set logging level
-export LOG_LEVEL="INFO"  # DEBUG, INFO, WARNING, ERROR
-```
-
-### Performance Tuning
-
-**High-Traffic Environments**
-```bash
-# Increase system packet buffer
-echo 'net.core.rmem_max = 134217728' >> /etc/sysctl.conf
-echo 'net.core.rmem_default = 134217728' >> /etc/sysctl.conf
-sysctl -p
-```
-
-**Memory Optimization**
-```bash
-# Configure LRU cache size (default: 10000)
-sudo network-analyzer-env/bin/python sniffer.py -i eth0 --cache-size 50000
-```
 
 ---
 
@@ -262,81 +220,17 @@ The analyzer generates comprehensive reports in the `Output/` directory:
 **Wireshark Analysis**
 ```bash
 # Open captured data in Wireshark
-wireshark Output/network_capture.pcap
+wireshark output/network_capture.pcap
 ```
 
 **Command-Line Analysis**
 ```bash
 # Quick statistics with tcpdump
-tcpdump -nn -r Output/network_capture.pcap | head -20
+tcpdump -nn -r output/network_capture.pcap | head -20
 
 # Protocol distribution
-tcpdump -nn -r Output/network_capture.pcap | awk '{print $3}' | sort | uniq -c | sort -nr
+tcpdump -nn -r output/network_capture.pcap | awk '{print $3}' | sort | uniq -c | sort -nr
 ```
-
----
-
-## 🚀 Performance
-
-### Benchmarks
-
-| Metric | Performance |
-|--------|-------------|
-| **Packet Processing Rate** | 100,000+ packets/second |
-| **Memory Footprint** | <512MB under normal load |
-| **CPU Utilization** | <10% on modern hardware |
-| **Storage Efficiency** | 95% compression ratio |
-
-### Optimization Tips
-
-1. **Use appropriate buffer sizes** for your network speed
-2. **Enable filtering** to reduce processing overhead
-3. **Monitor system resources** during extended captures
-4. **Rotate logs regularly** to prevent disk space issues
-
----
-
-## 🤝 Contributing
-
-We welcome contributions from the community! Please see our [Contributing Guidelines](CONTRIBUTING.md) for details.
-
-### Development Setup
-
-```bash
-# Clone and setup development environment
-git clone https://github.com/jidne24/CodeAlpha-Task.git
-cd CodeAlpha-Task/Network-Sniffer
-
-# Install development dependencies
-pip install -r requirements-dev.txt
-
-# Run tests
-python -m pytest tests/
-
-# Code formatting
-black . && isort .
-```
-
-### Reporting Issues
-
-Please use our [Issue Template](.github/ISSUE_TEMPLATE.md) when reporting bugs or requesting features.
-
----
-
-## 🆘 Support
-
-### Documentation
-- 📚 [Full Documentation](https://github.com/jidne24/CodeAlpha-Task/wiki)
-- 🎓 [Tutorial Series](https://github.com/jidne24/CodeAlpha-Task/wiki/tutorials)
-- 📝 [API Reference](https://github.com/jidne24/CodeAlpha-Task/wiki/api)
-
-### Community
-- 💬 [Discord Server](https://discord.gg/network-analyzer)
-- 📧 [Mailing List](mailto:network-analyzer@example.com)
-- 🐛 [Bug Reports](https://github.com/jidne24/CodeAlpha-Task/issues)
-
-### Professional Support
-For enterprise support and custom implementations, contact: [enterprise@example.com](mailto:enterprise@example.com)
 
 ---
 
