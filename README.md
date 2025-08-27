@@ -22,18 +22,6 @@
 
 ---
 
-## Table of Contents
-
-- [Overview](#-overview)
-- [Features](#-features)  
-- [Architecture](#-architecture)
-- [Quick Start](#-quick-start)
-- [Usage Guide](#-usage-guide)
-- [Output & Analysis](#-output--analysis)
-- [License](#-license)
-
----
-
 
 ## Overview
 
@@ -48,6 +36,7 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 - **Production Ready**: Battle-tested with comprehensive logging and monitoring
 
 ---
+
 
 ## Features
 
@@ -64,6 +53,7 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 | **Security Focused** | Privilege escalation handling and secure packet processing |
 
 ---
+
 
 ## Architecture
 
@@ -87,6 +77,7 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
 ```
 
 ---
+
 
 ## Quick Start
 
@@ -129,6 +120,7 @@ The **Network Traffic Analyzer** is an enterprise-grade network monitoring solut
    ```
 
 ---
+
 
 ## Usage Guide
 
@@ -175,6 +167,7 @@ sudo network-analyzer-env/bin/python sniffer.py -i eth0 -f "tcp portrange 6881-6
 | `q` | Quick exit (in dashboard mode) |
 
 ---
+
 
 ## Output & Analysis
 
@@ -232,6 +225,7 @@ tcpdump -nn -r output/network_capture.pcap | awk '{print $3}' | sort | uniq -c |
 
 ---
 
+
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
@@ -245,6 +239,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 ---
 
+
 <div align="center">
 
 ### Star this repository if you find it useful!
@@ -253,8 +248,8 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 *Making network analysis accessible to everyone*
 
-[![GitHub stars](https://img.shields.io/github/stars/jidne24/CodeAlpha-Task?style=social)](https://github.com/jidne24/CodeAlpha-Task/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/jidne24/CodeAlpha-Task?style=social)](https://github.com/jidne24/CodeAlpha-Task/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/jidne24/CodeAlpha-Task?style=social)](https://github.com/jidne24/CodeAlpha-Task/issues)
+[![GitHub stars](https://img.shields.io/github/stars/jidne24/network-traffic-analyzer?style=social)](https://github.com/jidne24/network-traffic-analyzer/stargazers)
+[![GitHub forks](https://img.shields.io/github/forks/jidne24/network-traffic-analyzer?style=social)](https://github.com/jidne24/network-traffic-analyzer/network/members)
+[![GitHub issues](https://img.shields.io/github/issues/jidne24/network-traffic-analyzer?style=social)](https://github.com/jidne24/network-traffic-analyzer/issues)
 
 </div>
