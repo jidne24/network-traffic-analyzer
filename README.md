@@ -1,6 +1,6 @@
 <div align="center">
    
-# 🌐 Network Traffic Analyzer
+# Network Traffic Analyzer
 
 </div>
 
