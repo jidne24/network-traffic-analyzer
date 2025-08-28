@@ -245,10 +245,4 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **Developed with ❤️ by [Gidne Huda](https://github.com/jidne24)**
 
-*Making network analysis accessible to everyone*
-
-[![GitHub stars](https://img.shields.io/github/stars/jidne24/network-traffic-analyzer?style=social)](https://github.com/jidne24/network-traffic-analyzer/stargazers)
-[![GitHub forks](https://img.shields.io/github/forks/jidne24/network-traffic-analyzer?style=social)](https://github.com/jidne24/network-traffic-analyzer/network/members)
-[![GitHub issues](https://img.shields.io/github/issues/jidne24/network-traffic-analyzer?style=social)](https://github.com/jidne24/network-traffic-analyzer/issues)
-
 </div>
