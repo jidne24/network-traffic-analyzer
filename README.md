@@ -16,7 +16,7 @@
 </div>
 
 <p align="center">
-<img src="assets/demo.gif" alt="Network Traffic Analyzer Dashboard" width="900">
+<img src="assets/dashboard-demo.gif" alt="Network Traffic Analyzer Dashboard" width="900">
 </p>
 
 ---
